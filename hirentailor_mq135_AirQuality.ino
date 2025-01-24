@@ -28,7 +28,7 @@ void loop() {
   Serial.println(ppm);            //print value of ppm in serial monitor
 
   lcd.setCursor(0,0);             // set cursor of lcd to 1st row and 1st column
-  lcd.print("Air Qualit: ");      // print message on lcd
+  lcd.print("Air Quality: ");      // print message on lcd
   lcd.print(ppm);                 // print value of MQ135
 
   if (ppm > threshold)            // check is ppm is greater than threshold or not
